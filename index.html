@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+<nav>
+<div class="logo">
+<img src="Images\logo.png"/>
+</div>
+<div class="nav-links">
+<ul>
+<li><a href="Camera.html">Camera</a></li>
+<li><a href="Processor.html">Processor</a></li>
+<li><a href="Display.html">Display</a></li>
+<li><a href="Battery.html">Battery</a></li>
+</ul>
+</div>
+
+
+</nav>
+
+    <div class="information">
+	
+        <img src="Images\phone.jpg" class="mobile">
+        <div id="circle">
+            <div class="feature one">
+                            <img src="Images\camera.jpg">
+                <div>
+                    <h1>Camera</h1>
+                    <p> Wide angle camera</p>
+                </div>
+
+            </div>
+
+            <div class="feature two">
+                            <img src="Images\processor.jpg">
+<div>
+                    <h1>Processor</h1>
+                    <p> Octa Core processor</p>
+                </div>
+            </div>
+            <div class="feature three">
+                            <img src="Images\phone.jpg">
+<div>
+                    <h1>Display</h1>
+                    <p> OLED display</p>
+                </div>
+            </div>
+            <div class="feature four">
+                            <img src="Images\battery1.png">
+<div>
+                    <h1>Battery</h1>
+                    <p>Lithium-ion battery</p>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="controls">
+        <img src="Images\arrow.png" id="up" width="50px">
+        <h3>Features</h3>
+       <img src="Images\arrow.png" id="down"width="50px">
+    </div>
+	
+	</div>
+</div>
+<script>
+    var circles=document.getElementById("circle");
+     var upbtn=document.getElementById("up");
+      var downbtn=document.getElementById("down");
+
+      var rotateValue=circles.style.transform;
+      var rotateSum;
+	  var rotateValue = "rotate(0deg)";
+
+
+      upbtn.onclick=function(){
+      rotateSum=rotateValue+"rotate(-90deg)";
+      circles.style.transform=rotateSum;
+      rotateValue=rotateSum;
+      }
+      
+	  
+	   downbtn.onclick=function(){
+      rotateSum=rotateValue+"rotate(90deg)";
+      circles.style.transform=rotateSum;
+      rotateValue=rotateSum;
+      }
+      
+	
+	  
+</script>
+
+
+
+</body>
+</html>
